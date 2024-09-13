@@ -1,0 +1,42 @@
+#prueba{
+        /* Button */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+
+    width: 240px;
+    height: 40px;
+
+    background: #E3E3E3;
+    border: 1px solid #767676;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.bg-secondary{
+    background-image: var(--bs-gradient);
+    background-color: #767676;
+}
+
+#contMain{
+    align-content: center;
+    width: 400px;
+    height: 400px;
+}
+
+#inputGroup-sizing-lg{
+    width: 140px;
+    height: 47.7px;
+}
+
