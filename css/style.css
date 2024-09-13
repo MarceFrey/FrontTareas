@@ -39,4 +39,9 @@
     width: 140px;
     height: 47.7px;
 }
+#btnMain{
+    position: absolute;
+    top: 35%; /* Mueve el botón al centro vertical */
+    left: 48%; /* Mueve el botón al centro horizontal */
+}
 
