@@ -1,47 +1,30 @@
-#prueba{
-        /* Button */
-
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    gap: 8px;
-
-    width: 240px;
-    height: 40px;
-
-    background: #E3E3E3;
-    border: 1px solid #767676;
-    border-radius: 8px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
+main{
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    height: 500px;
+    align-content: center;
+}
 .bg-secondary{
     background-image: var(--bs-gradient);
     background-color: #767676;
+    display: grid;
+    gap: 10px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#contMain{
-    align-content: center;
-    width: 400px;
-    height: 400px;
-}
-
-#inputGroup-sizing-lg{
-    width: 140px;
-    height: 47.7px;
-}
 #btnMain{
-    position: absolute;
-    top: 35%; /* Mueve el botón al centro vertical */
-    left: 48%; /* Mueve el botón al centro horizontal */
+    grid-row: 3;
+    grid-column: 1;
+    gap: 10px;
+    font-size: 15px;
+    justify-self: center;
+    background-color: brown;
 }
-
