@@ -4,27 +4,35 @@
     box-sizing: border-box;
 }
 
-main{
+main {
     display: grid;
     background-color: rgb(0, 0, 0);
-    height: 500px;
+    height: 50vh;
+    width: 100%;
     align-content: center;
 }
-.bg-secondary{
+
+.container {
     background-image: var(--bs-gradient);
     background-color: #767676;
     display: grid;
     gap: 10px;
     border-style: solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px; /* Aumenté el padding para más espacio interno */
+    border-radius: 20px;
+    place-items: center; /* Centro los elementos dentro del container */
+    width: 50%; /* Ajusta el ancho del container si es necesario */
+    margin: 0 auto; /* Para centrar el container horizontalmente */
 }
 
-#btnMain{
-    grid-row: 3;
-    grid-column: 1;
-    gap: 10px;
+#btnForm {
     font-size: 15px;
-    justify-self: center;
     background-color: brown;
+    padding: 10px 20px; /* Añadir padding interno al botón */
+    margin-top: 10px; /* Añadir margen superior para separar del contenido anterior */
+}
+
+.form{
+    display: grid;
+    justify-items: center;
 }

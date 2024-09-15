@@ -11,7 +11,7 @@
         <nav>
             <nav class="navbar navbar-expand-lg bg-white">
                 <div class="container-fluid">
-                  <img id="logo" src="/assets/Sin título.png" alt="" width="100px" height="50px">
+                  <img id="logo" src="./assets/Sin título.png" alt="" width="100px" height="50px">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -32,19 +32,28 @@
     </header>
 
     <main>
-        <div class="bg-secondary container">
-          <div class="input-group input-group-lg">
-              <span class="input-group-text" id="inputGroup-sizing-lg">Nueva Tarea</span>
-              <input type="text" class="form-control input1" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+      <div class="bg-secondary container w-25 p-4">
+        <form class="form">
+          <div class="mb-3">
+            <label for="taskInput" class="form-label">Nueva Tarea</label>
+            <div class="input-group input-group-lg">
+              <span class="input-group-text" id="inputGroup-task">Tarea</span>
+              <input type="text" class="form-control input1" id="inputTarea" aria-label="Nueva Tarea" aria-describedby="inputGroup-task" placeholder="Ingrese la tarea">
+            </div>
           </div>
-          <div class="input-group input-group-lg pt-2">
-              <span class="input-group-text" id="inputGroup-sizing-lg">Descripcion</span>
-              <input type="text" class="form-control input2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          <div class="mb-3">
+            <label for="descriptionInput" class="form-label">Descripción</label>
+            <div class="input-group input-group-lg">
+              <span class="input-group-text" id="inputGroup-description">Descripción</span>
+              <input type="text" class="form-control input2" id="descriptionInput" aria-label="Descripción" aria-describedby="inputGroup-description" placeholder="Ingrese la descripción">
+            </div>
           </div>
-          <button id = "btnMain" class="btn btn-secondary"> Agregar </button>
-        </div>   
-    </main>
+          <button id="btnForm" type="button" class="btn btn-secondary">Agregar</button>
+        </form>
+      </div>
 
+      <div id="containerCards"></div>
+    </main>
     <footer>
 
     </footer>
