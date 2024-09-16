@@ -7,7 +7,7 @@
 main {
     display: grid;
     background-color: rgb(0, 0, 0);
-    height: 50vh;
+    height: 100%;
     width: 100%;
     align-content: center;
 }
@@ -18,16 +18,16 @@ main {
     display: grid;
     gap: 10px;
     border-style: solid;
-    padding: 20px; /* Aumenté el padding para más espacio interno */
+    padding: 20px; /* Aumento el padding para más espacio interno */
+    margin: 50px; /* Aumento el margin para más espacio interno*/
     border-radius: 20px;
     place-items: center; /* Centro los elementos dentro del container */
     width: 50%; /* Ajusta el ancho del container si es necesario */
-    margin: 0 auto; /* Para centrar el container horizontalmente */
 }
 
 #btnForm {
     font-size: 15px;
-    background-color: brown;
+    background-color: rgb(37, 38, 39);
     padding: 10px 20px; /* Añadir padding interno al botón */
     margin-top: 10px; /* Añadir margen superior para separar del contenido anterior */
 }
@@ -35,4 +35,10 @@ main {
 .form{
     display: grid;
     justify-items: center;
+}
+
+#containerCards {
+    display: flex; /* Utiliza flexbox */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea si no hay suficiente espacio */
+    gap: 10px; /* Espacio entre las tarjetas */
 }
